@@ -2,7 +2,7 @@
 
 Algoritmo responsável por:
 
-* encontrar o padrão do Endeço MAC utilizado Expressão Regular(REGEX)
+* encontrar o padrão do Endeço MAC utilizando Expressão Regular(REGEX)
 
 * classificar esse enedereço por tipo de aparelho, fabriacante...
 
