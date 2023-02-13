@@ -14,7 +14,7 @@ def enviar_entrada():
     digitado = request.form['input']
     results = search(digitado=digitado)
     has_results = False if len(results) == 0 else True
-
+    
     if has_results:
         results = classify(results)
     return render_template('index.html', results = results, has_results = has_results, search_mode = True)
