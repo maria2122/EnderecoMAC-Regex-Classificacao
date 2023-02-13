@@ -7,3 +7,5 @@ Algoritmo responsável por:
 * classificar esse enedereço por tipo de aparelho, fabriacante...
 
 Trabalho da Disciplina de Compiladores 
+ 
+Créditos Arquivo (mac-vendors-export.csv): https://maclookup.app/downloads/csv-database

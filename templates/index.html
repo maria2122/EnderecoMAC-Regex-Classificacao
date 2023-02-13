@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+    <h1><b>Identificador de Endereço MAC</b></h1>
+    <form action="/enviar_entrada" method="POST" id="form">
+        <label>Entrada</label>
+        <textarea rows="4" cols="50" name="input" form="form"></textarea>
+        <input type="submit" value="Enviar" />
+    </form>
+
+    {% if (has_results == True) and (search_mode == True) %}
+    <table>
+        <thead>
+            <tr>
+                <th>Termo(s) Encontrado(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for result in results %}
+            <tr>
+                <td>{{result[0]}}</td>
+            </tr>
+        {% endfor %} 
+    </tbody>
+    </table>
+    {% endif%}
+
+    {% if (has_results == False) and (search_mode == True) %}   
+        <p class="alert alert-warning">Não foi encontrado nenhum Endereço MAC na entrada passada!</p>     
+    {% endif%}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
