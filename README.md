@@ -2,9 +2,9 @@
 
 Algoritmo responsável por:
 
-* encontrar o padrão do Endeço MAC utilizando Expressão Regular(REGEX)
+* Encontrar o padrão do Endeço MAC utilizando Expressão Regular(REGEX)
 
-* classificar esse enedereço por tipo de aparelho, fabriacante...
+* Classificar esse endereço por fabricante.
 
 Trabalho da Disciplina de Compiladores 
  
